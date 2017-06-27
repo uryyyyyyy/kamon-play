@@ -97,6 +97,7 @@ lazy val kamonPlay25 = Project("kamon-play-25", file("kamon-play-2.5.x"))
 lazy val kamonPlay26 = Project("kamon-play-26", file("kamon-play-2.6.x"))
   .settings(Seq(
     bintrayPackage := "kamon-play",
+    publishTo := Some(Resolver.file("file",  new File( "/Users/ko.shibata/develop/uryyyyyyy/git/" )) ),
     moduleName := "kamon-play-2.6",
     scalaVersion := "2.11.8",
     crossScalaVersions := Seq("2.11.8"),
